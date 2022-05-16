@@ -1,3 +1,4 @@
+/* 主要模块 */
 .main {
     width: 980px;
     height: 455px;
@@ -23,15 +24,224 @@
 .news {
     height: 165px;
 
-    background-color: pink;
+    border: 1px solid #e4e4e4;
+}
+
+.news-hd {
+    height: 33px;
+
+    line-height: 31px;
+
+    border-bottom: 1px dotted #e4e4e4;
+
+    padding: 0 15px;
+}
+
+.news-hd h5 {
+    float: left;
+
+    font-size: 14px;
+}
+
+.news-hd .more {
+    float: right;
+}
+
+.news-hd .more::after {
+    content: '\e920';
+
+    font-family: 'icomoon';
+}
+
+.news-bd {
+    padding: 5px 15px 0;
+}
+
+.news-bd li {
+    overflow: hidden;
+
+    height: 24px;
+    line-height: 24px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .lifeservice {
+    overflow: hidden;
     height: 209px;
 
-    background-color: violet;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+
+    width: 63px;
+    height: 71px;
+
+    text-align: center;
+
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+
+    width: 24px;
+    height: 28px;
+
+    background: url(../images/icons.png) no-repeat -17px -15px;
+
+    margin-top: 12px;
+}
+
+/* TODO: 将剩余的图标换到正确位置 */
+.lifeservice ul li:nth-child(2) i {
+    background: url(../images/icons.png) no-repeat -80px -15px;
 }
 
 .bargain {
     margin-top: 5px;
+}
+
+/* 推荐模块 */
+.recommend {
+    height: 163px;
+
+    background-color: #ebebeb;
+
+    margin-top: 12px;
+}
+
+.recommend-hd {
+    float: left;
+
+    height: 163px;
+    width: 205px;
+
+    text-align: center;
+
+    background-color: #5c5251;
+
+    padding-top: 30px;
+}
+
+.recommend-bd {
+    float: left;
+}
+
+.recommend-bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recommend-bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+.recommend-bd ul li:nth-child(-n + 3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+
+    width: 1px;
+    height: 145px;
+
+    background-color: #ddd;
+}
+
+/* 家用电器模块 */
+.floor .w {
+    margin-top: 30px;
+}
+
+.box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box-hd h3 {
+    float: left;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: #c81623;
+}
+
+.tab-list {
+    float: right;
+
+    line-height: 30px;
+}
+
+.tab-list ul li {
+    float: left;
+}
+
+.tab-list ul li a {
+    padding: 0 15px;
+}
+
+.box-bd {
+    height: 361px;
+}
+
+.tab-list-item>div {
+    float: left;
+
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+
+    background-color: #f9f9f9;
+}
+
+.col_210 ul {
+    text-align: center;
+
+    margin-bottom: 10px;
+    padding-left: 12px;
+}
+
+.col_210 ul li {
+    float: left;
+
+    width: 85px;
+    height: 34px;
+
+    text-align: center;
+    line-height: 33px;
+    border-bottom: 1px solid #ccc;
+
+    margin-right: 10px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #f9f9f9;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.bb {
+    /* 一般情况下，a如果包含有宽度的盒子，a需要转换成块级元素 */
+    display: block;
+    border-bottom: 1px solid #f9f9f9;
 }
